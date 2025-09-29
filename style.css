@@ -1,0 +1,72 @@
+body {
+  margin: 25px 50px 75px 100px;
+  cursor: pointer;
+}
+#home {
+  position: relative;
+  background-color: rgba(30, 30, 30, 0.7);
+  
+}
+
+header {
+  display: flex;
+}
+
+#header1 {
+  margin-left: 150px;
+  display: flex;
+  color:white;
+  size: 100px;
+}
+
+#nav {
+  list-style-type: none;
+  display: flex;
+  margin-left: 80px;
+  margin-top: 80px;
+  
+}
+
+#nav li a {
+  padding: 20px;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+#nav li a:hover {
+  background-color: skyblue;
+}
+
+a:visited {
+  background-color: plum;
+}
+
+img {
+  margin-left: 20px;
+}
+
+.container {
+  display: grid;
+  margin-left: 400px;
+  font-size: 50px;
+  padding:0;
+}
+.cont {
+  margin-left: 150px;
+}
+.cont button {
+  background-color: #007bff;   /* blue button */
+  color: white;
+  border: none;
+  margin:10px;
+  padding: 10px 20px;
+  border-radius: 25px;         /* fully rounded buttons */
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.cont button:hover {
+  background-color: #0056b3;   /* darker on hover */
+}
+
