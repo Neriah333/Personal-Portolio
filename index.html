@@ -11,69 +11,99 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <section id="home">
-    <header>
-      <div id="header1">
-        <i class="bi bi-vector-pen"></i>
-        <h3 style="font-size: 50px;">Portfolio</h3>
+  <header class="main-header">
+  <div class="logo">
+    <i class="bi bi-vector-pen"></i> <span>Portfolio</span>
+  </div>
+  <nav>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Experience</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">Skills</a></li>
+      <li><a href="#">Education</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+  <button class="hire-btn">Hire Me</button>
+</header>
+
+<section id="home">
+  <div class="intro">
+    <!-- Left: Text -->
+    <div class="intro-text">
+      <h1>Hi, I'm <span>Pheobe Nyawanda</span></h1>
+      <h2>Network Technician</h2>
+      <p>
+        Self-driven tech enthusiast with hands-on experience in system support. 
+        I’ve contributed to improving system uptime and developing impactful projects.
+      </p>
+      <div class="buttons">
+        <button class="btn-primary">Resume</button>
+        <button class="btn-secondary">Contact Me</button>
       </div>
-      <nav>
-      <ul id="nav">
-        <li><a href="">Experience</a>
-        <li><a href="">Projects</a></li>
-        <li><a href="">Skills</a></li>
-        <li><a href="">Education</a></li>
-        <li><a href="">Contact</a></li>
-      </ul>
-    </nav>
-    
-    </header>
-    <div style="display: flex;">
-      <div style="margin-left: 150px; margin-top: 50px;">
-      <p style="font-family: serif;font-size: 30px; color: lightblue"><b>Hello, I'm Pheobe Nyawanda</b></p>
-      <marquee style="font-family: serif;font-size: 20px; color: white">Network Technician</marquee>
-      <p style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS'; sans-serif: 20px;">Self-driven tech enthusiast with hands-on experience in system support. I’ve
-contributed to improving system uptime and developing impactful projects.</p>
-      
     </div>
-      <img src="/Images/Pheobe Nyawanda.png" alt="My photo" width="250" height="300">
-      <div class="container">
-      <a href="https://www.linkedin.com/in/pheobenyawanda59263630a/" target="_blank">
-      <i class="bi bi-linkedin" style="color: blue;"></i>
-      </a>
-      <a href="https://github.com/Neriah333" target="_blank">
-      <i class="bi bi-github"></i>
-      </a>
+
+    <!-- Right: Photo + Socials -->
+    <div class="intro-photo">
+      <img src="/Images/Pheobe Nyawanda.png" alt="My photo">
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/pheobenyawanda59263630a/" target="_blank">
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a href="https://github.com/Neriah333" target="_blank">
+          <i class="bi bi-github"></i>
+        </a>
+      </div>
     </div>
-    </div>
-    <div class="cont">
-      <button>Resume</button>
-      <button>Contact me</button>
-    </div>
-  </section>
+  </div>
+</section>
+
 
   <main>
 
     <div>
-      <h2>Experience</h2>
+      <img src="/Images/End-user.jpg" alt="End-user support image" width="400px" height="450px">
+      <h4>My success work</h4>
+      <h3>ICT Support </h3>
+      <h5>KEBS-Kisumu</h5>
+      <ul>
+        <li>Troubleshot and maintained networks, reducing downtime incidents by 30% through monitoring
+        and timely resolution. </li>
+        <li>Collaborated with senior ICT officers on infrastructure projects, gaining practical expertise and
+        enhancing team efficiency</li>
+        <li>Strictly followed safety protocols and ICT policies, contributing to zero safety incidents during
+        network installations.</li>
+        <li>Provided technical support to more than 15 staff members, increasing resolution speed and
+        boosting user satisfaction by 40%.</li>
+        <li>Assisted in configuring routers, switches, and wireless access points, which enhanced system
+        security and stability </li>
+      </ul>
       
     </div>
 
     <div>
-      <h2>My Skills</h2>
-      <li>
-        <ul>Network configuration and troubleshooting</ul>
-        <ul>Router and switch setup and management</ul>
-        <ul>Network security implementation (firewalls, VPNs, access control)</ul>
-        <ul>Cloud networking fundamentals (AWS)</ul>
-        <ul>Strong problem-solving and team collaboration skills</ul>
-        <ul>Customer Service</ul>
-        <ul>Adaptability</ul>
-      </li>
+      <h2>What i can do</h2>
+      <dl>
+        <dt>Networking</dt>
+        <dd>Network installations, configuration and troubleshooting</dd>
+        <dt>Hardware</dt>
+        <dd>Maintenance</dd>
+        <dt>Software</dt>
+        <dd>Installation</dd>
+        <dt>Security</dt>
+        <dd>Firewalls</dd>
+        <dt>Cloud</dt>
+        <dd>AWS</dd>
+        <dt>Soft Skills</dt>
+        <dd>Problem-solving, Team-player, Adaptive, Communication</dd>
+      </dl>
     </div>
 
     <div>
       <h2>Projects</h2>
+      <h3>Portfolio</h3>
+      <p>A static webapp showcasing about myself and mys skills built with html, css and bootstrap library</p>
     </div>
 
     <div>

@@ -1,72 +1,162 @@
-body {
-  margin: 25px 50px 75px 100px;
-  cursor: pointer;
-}
-#home {
-  position: relative;
-  background-color: rgba(30, 30, 30, 0.7);
-  
-}
-
-header {
+/* ===== HEADER ===== */
+.main-header {
   display: flex;
-}
-
-#header1 {
-  margin-left: 150px;
-  display: flex;
-  color:white;
-  size: 100px;
-}
-
-#nav {
-  list-style-type: none;
-  display: flex;
-  margin-left: 80px;
-  margin-top: 80px;
-  
-}
-
-#nav li a {
-  padding: 20px;
-  font-size: 20px;
+  justify-content: space-between;
+  align-items: center;
+  background: #1e1e1e;
+  padding: 20px 60px;
   color: white;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: skyblue;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
   text-decoration: none;
-}
-
-#nav li a:hover {
-  background-color: skyblue;
-}
-
-a:visited {
-  background-color: plum;
-}
-
-img {
-  margin-left: 20px;
-}
-
-.container {
-  display: grid;
-  margin-left: 400px;
-  font-size: 50px;
-  padding:0;
-}
-.cont {
-  margin-left: 150px;
-}
-.cont button {
-  background-color: #007bff;   /* blue button */
   color: white;
-  border: none;
-  margin:10px;
-  padding: 10px 20px;
-  border-radius: 25px;         /* fully rounded buttons */
-  font-size: 16px;
+  font-size: 18px;
   transition: 0.3s;
 }
 
-.cont button:hover {
-  background-color: #0056b3;   /* darker on hover */
+.nav-links li a:hover {
+  color: skyblue;
 }
 
+.hire-btn {
+  background: #007bff;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hire-btn:hover {
+  background: #0056b3;
+}
+
+/* ===== HERO SECTION ===== */
+#home {
+  min-height: 100vh;
+  background: #1e1e1e;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px;
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  gap: 50px;
+}
+
+.intro-text h1 {
+  font-size: 42px;
+}
+
+.intro-text h1 span {
+  color: skyblue;
+}
+
+.intro-text h2 {
+  font-size: 26px;
+  color: lightblue;
+  margin: 10px 0 20px;
+}
+
+.intro-text p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn-primary,
+.btn-secondary {
+  padding: 12px 25px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 16px;
+}
+
+.btn-primary {
+  background: #007bff;
+  border: none;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #0056b3;
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+}
+
+.btn-secondary:hover {
+  border-color: skyblue;
+  color: skyblue;
+}
+
+/* ===== PHOTO + SOCIALS ===== */
+.intro-photo {
+  position: relative;
+}
+
+.intro-photo img {
+  width: 280px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+/* Social icons on border */
+.socials {
+  position: absolute;
+  top: 50%;
+  left: -60px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.socials a {
+  color: white;
+  background: rgba(0,0,0,0.6);
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 22px;
+  transition: 0.3s;
+}
+
+.socials a:hover {
+  color: skyblue;
+  background: rgba(255,255,255,0.2);
+}
